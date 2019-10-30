@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/main.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css';
+import "font-awesome/css/font-awesome.css";
+import 'typeface-gentium-basic';
+import 'typeface-open-sans';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

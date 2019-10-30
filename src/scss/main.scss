@@ -1,0 +1,386 @@
+$gloryRed: #BF0A30;
+$gloryBlue: #002868;
+$gloryRedDk: #E50A30;
+$gloryBlueDk: #001A68;
+$gold: #D4AF37;
+$wt: #FFF;
+$blueToRed: 90deg, $gloryBlue 40%, #FFF 50%, $gloryRed 60%;
+$footerGradient: #FFF, $gloryBlue 10%,$gloryBlue 45%, $gloryRed 55%, $gloryRed 90%, #FFF;
+$revFooterGradient: #FFF, $gloryRed 10%,$gloryRed 45%, $gloryBlue 55%, $gloryBlue 90%, #FFF;
+$altBorderRadius: 10px 0 10px 0;
+@import url(https://fonts.googleapis.com/css?family=Gentium+Basic|Open+Sans&display=swap);
+
+
+@mixin prefix($property, $value, $vendors: webkit moz ms o, $default: true) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-" + $property}: #{$value};
+    }
+  }
+  @if $default {
+    #{$property}: #{$value};
+  }
+}
+
+#success_message{ 
+  display: none;
+}
+
+body{
+  background-color: #000133;
+  font-family: 'Gentium Basic', serif;
+
+}
+.firstContain{
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  background: #FFF;
+  max-width: 980px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  overflow: auto;
+  z-index:1000;
+  min-height:100vh;
+}
+.leadTitle{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.largeText{
+  font-size:24px;
+}
+.mediumText{
+  font-size: 18px;
+}
+.holdAll{
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  background: -webkit-linear-gradient( $blueToRed); 
+  background: -o-linear-gradient($blueToRed);
+  background: -moz-linear-gradient($blueToRed); 
+  background: linear-gradient($blueToRed);
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  overflow: auto;
+}
+
+.bringToFront{
+  z-index: 1000;
+}
+
+.amFlag{
+  position:fixed; /* don't you move */
+  top:0px;
+  height: 105%;
+  background-color: $gloryRed;
+}
+.amFlagImg{
+  max-width: 100%;
+}
+.amFlagFlip{
+  @include prefix('transform', scaleX(-1), moz webkit o);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.left{
+  left:0%;
+}
+.right{
+  right:0%;
+
+}
+
+
+.mainMenu{
+  li a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: $gloryRed;
+    
+      &:hover{
+        color: #FFFFFF;
+        }
+  }
+} 
+
+
+#content{
+  position: relative;
+  padding-bottom: 65px;
+
+}
+#contentSecond{
+  position: relative;
+  padding-bottom: 65px;
+}
+.textBlock{
+  border: 2px solid $gold;
+  background: rgba(255,255,255, 1);
+  border-radius: $altBorderRadius;
+  padding: 10px;
+  margin: 10px 10px;
+}
+.breatheSide{
+  margin: 0 10px;
+} 
+.breatheBottom{
+  margin-bottom: 10px;
+}
+.breatheTop{
+  margin-top: 10px;
+}
+
+
+.mainMenu{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+nav.navbar.navbar-expand-lg.navbar-light{
+  margin: 0px;
+  padding: 0px;
+}
+.navbar{
+  width: 100%;
+}
+.mainMenu > li {
+  width: 14.28571428571429%;
+  text-align: center;
+}
+
+#footer{
+  padding-top: 12px !important;
+  position: fixed;
+  bottom: 0px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 15px;
+  background: -webkit-linear-gradient( $footerGradient); 
+  background: -o-linear-gradient($footerGradient);
+  background: -moz-linear-gradient($footerGradient); 
+  background: linear-gradient($footerGradient);
+  color: #FFF;
+  width: 100%;
+  border-top: 2px solid #FFF;
+  font-style: oblique;
+  z-index: 2000;
+}
+
+.modal-backdrop{
+  z-index: 2001;
+}
+
+.ekko-lightbox{
+  z-index: 2002;
+}
+
+.navContain{
+  width:inherit;
+}
+
+.fixedCollage{
+  height: 100%;
+  width: 91.8%;
+  max-width: 100%;
+  float: right;
+}
+.navbar{
+  li.active {
+    background-color: $gloryBlue;
+  }
+  li:hover, li:hover a{
+    background-color: $gloryBlue;
+  }
+  border: 0px;
+}
+
+.mainMenu li.active>a:focus, .mainMenu li.active>a:hover{
+  background-color: $gloryBlue;
+}
+
+.brand{
+  position: absolute;
+  padding: 0;
+  left: 10px;
+  > img{
+    height: 67%;
+  width: 67%;
+  }
+}
+.navbar li{
+  background-color: $gloryRed;
+  a{
+
+    color:#FFF;
+  }
+
+}
+
+.navbar-collapse {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+  padding-left:0;
+  padding-right:0;
+}
+/*styles for slideshow*/
+.bspHasModal {
+  cursor: pointer;
+}
+div.modal-backdrop{
+  z-index: 1000;
+}
+.ulThumb{
+  display: flex;
+  flex-wrap:wrap;
+  &.thumb{
+    flex-basis: 9%; 
+    margin-right:1%;
+    cursor: pointer;
+    border: 2px solid $gloryRed;
+  }
+}
+.clickedImg{
+  display: block;
+  max-width:730px;
+  max-height:730px;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#slideshownav a.navselected{color:#EB910C;}
+#slideshownav {text-align:left;padding-top:8px;padding-bottom:20px;}
+#slideshownav a {padding-right:10px;color:#748090;font-size:10px;}
+#slideshownav a:hover {cursor:pointer;} 
+
+/* makes images responsive */
+.slide-container{
+
+  img {
+    border: 2px solid $gold;
+    border-radius: $altBorderRadius;
+    max-width: 100%;
+    float: left;
+    margin: 0 -100% 0 0;
+  }
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.btn.btn-default{
+  background-image: linear-gradient($footerGradient);
+  border:1px solid $gloryRed;
+  color: $wt;
+  text-shadow: none;
+  &:hover{
+    background-image: linear-gradient($revFooterGradient);
+    background-color:transparent;
+    background-position: 0 0;
+    color:$wt;
+    text-shadow: none;
+    border:1px solid $gloryBlue;
+  }
+  &:focus{
+    background-image: linear-gradient($revFooterGradient);
+    background-color:transparent;
+    background-position: 0 0;
+    color:$wt;
+    text-shadow: none;
+    border:1px solid $gloryBlue;
+  }
+}
+.btn.btn-default:focus, .btn.btn-default:hover {
+    background-color: transparent;
+    background-position: 0 0;
+}
+
+.rule{
+  &:nth-of-type(odd){
+    border-bottom: 1px solid $gloryRed;
+  }
+  &:nth-of-type(even){ 
+    border-bottom: 1px solid $gloryBlue;
+  }
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+.navbar-toggler{
+	background-color: $gloryBlue;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+	background-color: $gloryRed;
+}
+
+.slide-container {
+  width: 486px;
+  margin: 10px 10px 10px 100px; 
+}
+
+h3 {
+  text-align: center; }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
+
+@media (max-width: 767px) {
+	.navbar{
+		li{
+			width:100%;
+			
+		}
+	}
+}
+@import '~bootstrap/scss/bootstrap.scss';
