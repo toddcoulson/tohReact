@@ -6,11 +6,11 @@ return(<div className="textBlock">
 <p>
   Donations can also be accepted by mail. Please mail your donation to:
   <span className="indent">
-    BUCKS COUNTY TOUR OF HONOR<br />
+    BUCKS COUNTY TOUR OF HONOR &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
     P.O. Box 689<br />
     Doylestown, PA. 18901<br />
-    215-614-0720<br />
-    Email address to be inserted
+    267-614-0720<br />
+    <a href="mailto:buckscountytourofhonor@gmail.com">buckscountytourofhonor@gmail.com</a>
   </span>
 </p>
 <p className="leadTitle mediumText">

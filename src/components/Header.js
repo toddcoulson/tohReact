@@ -29,7 +29,7 @@ export const Header= () =>  {
         <img src={collage} className="fixedCollage" alt="collage" />
         </div>
         <div id='header'>
-        <A href="/testimonials" className="brand">
+        <A href="/" className="brand">
             <img src={logo} alt="Tour of Honor" />
         </A>
         <nav className="navbar navbar-expand-lg navbar-light">
