@@ -25,7 +25,7 @@ function App() {
                 </div>
             </div>
             <div id="footer" ui-view="footer">
-            <p className="text-center mediumText">Bucks County Tour of Honor <i className="fa fa-star" aria-hidden="true"></i> 55 E. Court Street <i className="fa fa-star" aria-hidden="true"></i> Doylestown, PA. 18901</p>
+            <p className="text-center mediumText">Bucks County Tour of Honor <i className="fa fa-star" aria-hidden="true"></i> P.O. Box 689 <i className="fa fa-star" aria-hidden="true"></i> Doylestown, PA. 18901</p>
             </div>
             <div className="right amFlag">
             	<img src={flag} className="amFlagImg" alt="amFlag left" />
