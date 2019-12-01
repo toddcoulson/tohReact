@@ -75,12 +75,12 @@ export const About= () =>  {
                 <p style={{textAlign:'left'}}>The Bucks County Tour of Honor is an all expenses paid trip for the veteran and is destined to be an experience you will forever treasure.</p>
                 <p style={{textAlign:'left'}}>Space is limited, so to avoid disappointment please complete and return your application to us as soon as possible to secure your spot.</p>
                 
-                <p style={{textAlign:'left'}}>Applications can be downloaded from this site or you can contact us at <a href="mailto:buckscountytourofhonor@gmail.com">buckscountytourofhonor@gmail.com</a> or by calling 215-614-0720 and we can send an application to you via mail.</p>
+                <p style={{textAlign:'left'}}>Applications can be downloaded from this site or you can contact us at <a href="mailto:buckscountytourofhonor@gmail.com">buckscountytourofhonor@gmail.com</a> or by calling 267-614-0720 and we can send an application to you via mail.</p>
 
                 <p style={{textAlign:'left'}}>Completed applications should be returned to:</p>
 
                 <p style={{textAlign:'left'}}>Bucks County Tour of Honor<br />
-                    55 E. Court Street <br />
+                    P.O. Box 689 <br />
                     Doylestown, PA. 18901
                 </p>
             </div>
