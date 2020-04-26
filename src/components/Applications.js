@@ -30,7 +30,7 @@ return(<div style={{marginBottom:'50px'}}><div className="textBlock">
 {doc.fields.docInfo}
 </p>
 
-<a href={doc.fields.doc.fields.file.url} className="btn btn-default">Download Veteran Application</a>
+<a href={doc.fields.doc.fields.file.url} className="btn btn-default">Download</a>
 {i !== documents.length-1 ? <p className="rule"></p>: ''}
     
           </div>  

@@ -13,8 +13,8 @@ return(<div style={{marginBottom:'50px'}}><div className="textBlock">
 
 <p className="leadTitle mediumText">HONORARY BOARD MEMBERS</p>
 <ul style={{textAlign:'left'}}>
-    <li>Congressman Michael Fitzpatrick <span>8th District-PA</span></li>
-    <li>Commissioner Charles Martin <span>Bucks County</span></li>
+    <li>Matt Weintraub <span>Bucks County District Attorney</span></li>
+    <li>Frank Peranteau, Sr <span>Bucks County District Court Judge</span></li>
     <li>Mayor Joseph DiGirolamo <span>Bensalem Township</span></li>
 </ul>
 </div></div>
